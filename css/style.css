@@ -1,0 +1,150 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+  padding: 0;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  line-height: 1.5;
+  width: 1280px;
+  height: auto;
+  background-color: lightgray;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+.header {
+	width: 100%;
+	height: 100px;
+	background-color: #1c2429;
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+}
+
+img.avatar {
+	height:80px;
+	width: 80px;
+	border-radius:50%;
+	vertical-align: middle;
+	position: absolute;
+	top: 50px; left: 250px;
+}
+
+.top-nav {
+	width: 40%;
+}
+
+.top-list {
+	width: 50%;
+	display: flex;
+	justify-content: space-around;
+	list-style: none;
+}
+
+.top-list li a {
+	font-size: 20px;
+	color: #343aeb;
+}
+
+.top-name {
+	background-color: #343aeb;
+	width: 300px;
+	margin-bottom: 15px;
+	padding-left: 15px;
+}
+
+.hero-banner {
+	width: 100%;
+	height: 200px;
+	background-color: #d4d97e;
+	background-image: url("../images/02-hero-bg.jpg");
+	background-position: center;
+	background-size: cover;
+}
+
+.main-point {
+	background-color: #343aeb;
+	width: 350px;
+	height: 40px;
+	float: right;
+	position: relative;
+	top: 140px;
+	right: 30px;
+	padding-left: 10px;
+}
+
+.page-section {
+	width: 100%;
+	margin: 15px 0px 15px 0px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.section-title {
+	width: 24%;
+	height: 100%;
+	color: #6203fc;
+	text-align: end;
+	font-size: 30px;
+}
+
+.description {
+	width: 75%;
+	height: auto;
+	border-left: 3px solid #6203fc;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.description p {
+	padding-bottom: 15px;
+}
+
+.parent-grid {
+	display: grid;
+	height: 800px;
+	border: 2px solid black;
+	grid-template-rows: 1fr 1fr 1fr;
+	grid-template-columns: 1fr 1fr;	
+	grid-template-areas: 
+	"Surf-Report" "Surf-Report"
+	"LED-Wall" "calculator"
+	"pastel-puzzle" "run-buddy";
+	}
+
+.Surf-Report {
+	grid-area: Surf-Report;
+	background-color: yellow;
+}
+
+.bottom-nav {
+	width: 100%;
+	height: auto;
+	display: flex;
+	justify-content: space-around;
+	list-style: none;
+	padding-top: 15px;
+}
+
+.bottom-nav li a {
+	font-size: 20px;
+	color: #343aeb;
+}
+
+
+
+
+
